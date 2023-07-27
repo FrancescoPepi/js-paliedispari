@@ -30,3 +30,24 @@ Dichiariamo chi ha vinto.
 - La **FUNZIONE** dovrà controllare
   - **SE** l'ultima lettera è uguale alla prima, e così via per tutte le parole ;
   - **ALTRIMENTI** dare risposta negativa ;
+
+---
+
+---
+
+### **_Pari e Dispari_**
+
+- Creazione di 2 pulsanti
+  - Pari ;
+  - Dispari ;
+- Dopo la scelta Chiedere di inserire un numero da 1 a 5 ;
+- Chiamare la **FUNZIONE** _numeroRandom_
+  - Che generera 1 numero casuale da 1 a 5 e sommerà il numero random e il numero inserito dall'utente ;
+- **SE** la somma è pari e lutente ha scelto pari
+  - l'utente avrà vinto ;
+- **ALTRIMENTI-SE** la somma è dispari e lutente ha scelto dispari
+  - l'utente avrà vinto ;
+- **ALTRIMENTI**
+  - l'utente avrà perso ;
+
+# FINE

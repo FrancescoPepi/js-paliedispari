@@ -1,9 +1,7 @@
 let inputString = askString();
 
-console.log(inputString + " ask-string");
-
 function askString(message = "Iserisci una parola") {
-  let userString = prompt(message);
+  let userString = prompt(message).toLowerCase();
 
   //   while (userString != "") {
   //     alert("ATTENZIONE! hai inserito un numero");
@@ -14,10 +12,9 @@ function askString(message = "Iserisci una parola") {
   return userString;
 }
 
-function controlloPalidromi(inputString) {
+function checkPalidromi(inputString) {
   for (let i = 0; i < inputString.length; i++) {
     palidromi = false;
-    console.log(palidromi);
     firstLetter = inputString[i];
     lastLetter = inputString[inputString.length - (i + 1)];
     if (lastLetter == firstLetter) {
@@ -26,6 +23,9 @@ function controlloPalidromi(inputString) {
   }
   return palidromi;
 }
-
-let risposta = controlloPalidromi(inputString);
-console.log(risposta + " sono io");
+// recupro dati function
+let returnOutput = checkPalidromi(inputString);
+// if-else
+returnOutput
+  ? console.log("La parola " + inputString + " è una parola palidroma")
+  : console.log("La parola " + inputString + " non è una parola palidroma");
